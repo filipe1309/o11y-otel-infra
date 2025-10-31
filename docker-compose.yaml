@@ -1,0 +1,106 @@
+version: "2"
+services:
+
+  jaeger:
+    image: jaegertracing/all-in-one:1.40.0
+    ports:
+      - "16686:16686"
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+      - METRICS_STORAGE_TYPE=prometheus
+      - PROMETHEUS_SERVER_URL=http://prometheus:9090
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.138.0
+    command: ["--config=/etc/otel-collector-config.yaml"]
+    volumes:
+      - ./otel-collector/otelcol-config.yaml:/etc/otel-collector-config.yaml
+    ports:
+      - "4317:4317"
+      - "4318:4318"
+      - "8888:8888"
+      - "9999:9999"
+    depends_on:
+      jaeger:
+        condition: service_started
+      prometheus:
+        condition: service_started
+      opensearch:
+        condition: service_healthy
+
+  prometheus:
+    image: prom/prometheus:v2.41.0
+    command:
+      - --web.console.templates=/etc/prometheus/consoles
+      - --web.console.libraries=/etc/prometheus/console_libraries
+      - --storage.tsdb.retention.time=1h
+      - --storage.tsdb.path=/prometheus
+      - --web.enable-lifecycle
+      - --web.route-prefix=/
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --web.enable-remote-write-receiver
+    volumes:
+      - ./prometheus/config.yaml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana:12.2.0
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana/grafana.ini:/etc/grafana/grafana.ini
+      - ./grafana/provisioning/:/etc/grafana/provisioning/
+    environment:
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_BASIC_ENABLED=false
+      - GF_INSTALL_PLUGINS=grafana-opensearch-datasource
+    depends_on:
+      - prometheus
+      - opensearch
+
+  opensearch:
+    build:
+      context: ./
+      dockerfile: opensearch/Dockerfile
+    deploy:
+      resources:
+        limits:
+          memory: 800M
+    restart: unless-stopped
+    environment:
+      - cluster.name=demo-cluster
+      - node.name=demo-node
+      - bootstrap.memory_lock=true
+      - discovery.type=single-node
+      - OPENSEARCH_JAVA_OPTS=-Xms400m -Xmx400m
+      - DISABLE_INSTALL_DEMO_CONFIG=true
+      - DISABLE_SECURITY_PLUGIN=true
+      # Workaround on OSX for https://bugs.openjdk.org/browse/JDK-8345296
+      - _JAVA_OPTIONS
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    ports:
+      - "9200:9200"
+    healthcheck:
+      test: curl -s http://localhost:9200/_cluster/health | grep -E '"status":"(green|yellow)"'
+      start_period: 10s
+      interval: 5s
+      timeout: 10s
+      retries: 10
+    logging: 
+      driver: "json-file"
+      options:
+        max-size: "5m"
+        max-file: "2"
+        tag: "{{.Name}}"
+
+networks:
+  default:
+    name: o11y-otel-infra_default

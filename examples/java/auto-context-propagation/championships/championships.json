@@ -1,0 +1,311 @@
+{
+  "_embedded": {
+    "championships": [
+      {
+        "name": "Paulista - Série A1",
+        "year": 2015,
+        "_links": {
+          "self": {
+            "href": "/championships/470"
+          },
+          "championship": {
+            "href": "/championships/470"
+          },
+          "teams": {
+            "href": "/championships/470/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A2",
+        "year": 2015,
+        "_links": {
+          "self": {
+            "href": "/championships/471"
+          },
+          "championship": {
+            "href": "/championships/471"
+          },
+          "teams": {
+            "href": "/championships/471/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A3",
+        "year": 2015,
+        "_links": {
+          "self": {
+            "href": "/championships/472"
+          },
+          "championship": {
+            "href": "/championships/472"
+          },
+          "teams": {
+            "href": "/championships/472/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - 2ª Divisão",
+        "year": 2015,
+        "_links": {
+          "self": {
+            "href": "/championships/508"
+          },
+          "championship": {
+            "href": "/championships/508"
+          },
+          "teams": {
+            "href": "/championships/508/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A1",
+        "year": 2016,
+        "_links": {
+          "self": {
+            "href": "/championships/539"
+          },
+          "championship": {
+            "href": "/championships/539"
+          },
+          "teams": {
+            "href": "/championships/539/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A2",
+        "year": 2016,
+        "_links": {
+          "self": {
+            "href": "/championships/540"
+          },
+          "championship": {
+            "href": "/championships/540"
+          },
+          "teams": {
+            "href": "/championships/540/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A3",
+        "year": 2016,
+        "_links": {
+          "self": {
+            "href": "/championships/541"
+          },
+          "championship": {
+            "href": "/championships/541"
+          },
+          "teams": {
+            "href": "/championships/541/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - 2ª Divisão",
+        "year": 2016,
+        "_links": {
+          "self": {
+            "href": "/championships/583"
+          },
+          "championship": {
+            "href": "/championships/583"
+          },
+          "teams": {
+            "href": "/championships/583/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A1",
+        "year": 2017,
+        "_links": {
+          "self": {
+            "href": "/championships/614"
+          },
+          "championship": {
+            "href": "/championships/614"
+          },
+          "teams": {
+            "href": "/championships/614/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A2",
+        "year": 2017,
+        "_links": {
+          "self": {
+            "href": "/championships/615"
+          },
+          "championship": {
+            "href": "/championships/615"
+          },
+          "teams": {
+            "href": "/championships/615/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A3",
+        "year": 2017,
+        "_links": {
+          "self": {
+            "href": "/championships/616"
+          },
+          "championship": {
+            "href": "/championships/616"
+          },
+          "teams": {
+            "href": "/championships/616/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - 2ª Divisão",
+        "year": 2017,
+        "_links": {
+          "self": {
+            "href": "/championships/658"
+          },
+          "championship": {
+            "href": "/championships/658"
+          },
+          "teams": {
+            "href": "/championships/658/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A1",
+        "year": 2018,
+        "_links": {
+          "self": {
+            "href": "/championships/688"
+          },
+          "championship": {
+            "href": "/championships/688"
+          },
+          "teams": {
+            "href": "/championships/688/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A2",
+        "year": 2018,
+        "_links": {
+          "self": {
+            "href": "/championships/689"
+          },
+          "championship": {
+            "href": "/championships/689"
+          },
+          "teams": {
+            "href": "/championships/689/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A3",
+        "year": 2018,
+        "_links": {
+          "self": {
+            "href": "/championships/690"
+          },
+          "championship": {
+            "href": "/championships/690"
+          },
+          "teams": {
+            "href": "/championships/690/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - 2ª Divisão",
+        "year": 2018,
+        "_links": {
+          "self": {
+            "href": "/championships/735"
+          },
+          "championship": {
+            "href": "/championships/735"
+          },
+          "teams": {
+            "href": "/championships/735/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A1",
+        "year": 2019,
+        "_links": {
+          "self": {
+            "href": "/championships/769"
+          },
+          "championship": {
+            "href": "/championships/769"
+          },
+          "teams": {
+            "href": "/championships/769/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A2",
+        "year": 2019,
+        "_links": {
+          "self": {
+            "href": "/championships/770"
+          },
+          "championship": {
+            "href": "/championships/770"
+          },
+          "teams": {
+            "href": "/championships/770/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - Série A3",
+        "year": 2019,
+        "_links": {
+          "self": {
+            "href": "/championships/771"
+          },
+          "championship": {
+            "href": "/championships/771"
+          },
+          "teams": {
+            "href": "/championships/771/teams"
+          }
+        }
+      },
+      {
+        "name": "Paulista - 2ª Divisão",
+        "year": 2019,
+        "_links": {
+          "self": {
+            "href": "/championships/924"
+          },
+          "championship": {
+            "href": "/championships/924"
+          },
+          "teams": {
+            "href": "/championships/924/teams"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "/championships"
+    }
+  }
+}

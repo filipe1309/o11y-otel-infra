@@ -1,0 +1,15 @@
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+
+
+apiVersion: 1
+providers:
+  - name: 'OpenTelemetry Example'
+    orgId: 1
+    folder: 'Example'
+    folderUid: 'example'
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /etc/grafana/provisioning/dashboards/example

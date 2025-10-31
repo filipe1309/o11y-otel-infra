@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  ms-client:
+    build:
+      dockerfile: Dockerfile
+      context: ./client
+    environment:
+      - OTEL_EXPORTER_OTLP_ENDPOINT=otel-collector:4317
+      - MS_SERVER_ENDPOINT=http://ms-server:7080/hello
+    depends_on:
+      - ms-server
+    networks:
+      - default
+      - o11y-otel-infra_default
+
+  ms-server:
+    build:
+      dockerfile: Dockerfile
+      context: ./server
+    environment:
+      - OTEL_EXPORTER_OTLP_ENDPOINT=otel-collector:4317
+    ports:
+      - "7080"
+    networks:
+      - default
+      - o11y-otel-infra_default
+
+networks:
+  o11y-otel-infra_default:
+    external: true

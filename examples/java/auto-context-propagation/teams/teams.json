@@ -1,0 +1,1955 @@
+{
+  "_embedded": {
+    "teams": [
+      {
+        "name": "Palmeiras",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1"
+          },
+          "team": {
+            "href": "/teams/1"
+          },
+          "matches": {
+            "href": "/teams/1/matches"
+          },
+          "championships": {
+            "href": "/teams/1/championships"
+          }
+        }
+      },
+      {
+        "name": "São Paulo",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/2/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/2"
+          },
+          "team": {
+            "href": "/teams/2"
+          },
+          "matches": {
+            "href": "/teams/2/matches"
+          },
+          "championships": {
+            "href": "/teams/2/championships"
+          }
+        }
+      },
+      {
+        "name": "XV de Jaú",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/3/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/3"
+          },
+          "team": {
+            "href": "/teams/3"
+          },
+          "matches": {
+            "href": "/teams/3/matches"
+          },
+          "championships": {
+            "href": "/teams/3/championships"
+          }
+        }
+      },
+      {
+        "name": "Flamengo",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/4/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/4"
+          },
+          "team": {
+            "href": "/teams/4"
+          },
+          "matches": {
+            "href": "/teams/4/matches"
+          },
+          "championships": {
+            "href": "/teams/4/championships"
+          }
+        }
+      },
+      {
+        "name": "Sertãozinho",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/5/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/5"
+          },
+          "team": {
+            "href": "/teams/5"
+          },
+          "matches": {
+            "href": "/teams/5/matches"
+          },
+          "championships": {
+            "href": "/teams/5/championships"
+          }
+        }
+      },
+      {
+        "name": "Atlético Sorocaba",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/6/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/6"
+          },
+          "team": {
+            "href": "/teams/6"
+          },
+          "matches": {
+            "href": "/teams/6/matches"
+          },
+          "championships": {
+            "href": "/teams/6/championships"
+          }
+        }
+      },
+      {
+        "name": "São Bento",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/7/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/7"
+          },
+          "team": {
+            "href": "/teams/7"
+          },
+          "matches": {
+            "href": "/teams/7/matches"
+          },
+          "championships": {
+            "href": "/teams/7/championships"
+          }
+        }
+      },
+      {
+        "name": "Bandeirante",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/8/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/8"
+          },
+          "team": {
+            "href": "/teams/8"
+          },
+          "matches": {
+            "href": "/teams/8/matches"
+          },
+          "championships": {
+            "href": "/teams/8/championships"
+          }
+        }
+      },
+      {
+        "name": "Santo André",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/9/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/9"
+          },
+          "team": {
+            "href": "/teams/9"
+          },
+          "matches": {
+            "href": "/teams/9/matches"
+          },
+          "championships": {
+            "href": "/teams/9/championships"
+          }
+        }
+      },
+      {
+        "name": "Rio Claro",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/10/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/10"
+          },
+          "team": {
+            "href": "/teams/10"
+          },
+          "matches": {
+            "href": "/teams/10/matches"
+          },
+          "championships": {
+            "href": "/teams/10/championships"
+          }
+        }
+      },
+      {
+        "name": "Botafogo",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/11/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/11"
+          },
+          "team": {
+            "href": "/teams/11"
+          },
+          "matches": {
+            "href": "/teams/11/matches"
+          },
+          "championships": {
+            "href": "/teams/11/championships"
+          }
+        }
+      },
+      {
+        "name": "Comercial",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/12/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/12"
+          },
+          "team": {
+            "href": "/teams/12"
+          },
+          "matches": {
+            "href": "/teams/12/matches"
+          },
+          "championships": {
+            "href": "/teams/12/championships"
+          }
+        }
+      },
+      {
+        "name": "Rio Branco",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/13/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/13"
+          },
+          "team": {
+            "href": "/teams/13"
+          },
+          "matches": {
+            "href": "/teams/13/matches"
+          },
+          "championships": {
+            "href": "/teams/13/championships"
+          }
+        }
+      },
+      {
+        "name": "Guarani",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/14/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/14"
+          },
+          "team": {
+            "href": "/teams/14"
+          },
+          "matches": {
+            "href": "/teams/14/matches"
+          },
+          "championships": {
+            "href": "/teams/14/championships"
+          }
+        }
+      },
+      {
+        "name": "Noroeste",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/15/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/15"
+          },
+          "team": {
+            "href": "/teams/15"
+          },
+          "matches": {
+            "href": "/teams/15/matches"
+          },
+          "championships": {
+            "href": "/teams/15/championships"
+          }
+        }
+      },
+      {
+        "name": "Inter de Limeira",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/16/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/16"
+          },
+          "team": {
+            "href": "/teams/16"
+          },
+          "matches": {
+            "href": "/teams/16/matches"
+          },
+          "championships": {
+            "href": "/teams/16/championships"
+          }
+        }
+      },
+      {
+        "name": "Marília",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/17/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/17"
+          },
+          "team": {
+            "href": "/teams/17"
+          },
+          "matches": {
+            "href": "/teams/17/matches"
+          },
+          "championships": {
+            "href": "/teams/17/championships"
+          }
+        }
+      },
+      {
+        "name": "Mirassol",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/18/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/18"
+          },
+          "team": {
+            "href": "/teams/18"
+          },
+          "matches": {
+            "href": "/teams/18/matches"
+          },
+          "championships": {
+            "href": "/teams/18/championships"
+          }
+        }
+      },
+      {
+        "name": "Mogi Mirim",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/19/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/19"
+          },
+          "team": {
+            "href": "/teams/19"
+          },
+          "matches": {
+            "href": "/teams/19/matches"
+          },
+          "championships": {
+            "href": "/teams/19/championships"
+          }
+        }
+      },
+      {
+        "name": "Juventus",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/20/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/20"
+          },
+          "team": {
+            "href": "/teams/20"
+          },
+          "matches": {
+            "href": "/teams/20/matches"
+          },
+          "championships": {
+            "href": "/teams/20/championships"
+          }
+        }
+      },
+      {
+        "name": "Nacional",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/21/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/21"
+          },
+          "team": {
+            "href": "/teams/21"
+          },
+          "matches": {
+            "href": "/teams/21/matches"
+          },
+          "championships": {
+            "href": "/teams/21/championships"
+          }
+        }
+      },
+      {
+        "name": "Ituano",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/22/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/22"
+          },
+          "team": {
+            "href": "/teams/22"
+          },
+          "matches": {
+            "href": "/teams/22/matches"
+          },
+          "championships": {
+            "href": "/teams/22/championships"
+          }
+        }
+      },
+      {
+        "name": "Oeste",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/23/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/23"
+          },
+          "team": {
+            "href": "/teams/23"
+          },
+          "matches": {
+            "href": "/teams/23/matches"
+          },
+          "championships": {
+            "href": "/teams/23/championships"
+          }
+        }
+      },
+      {
+        "name": "Guaratinguetá",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/24/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/24"
+          },
+          "team": {
+            "href": "/teams/24"
+          },
+          "matches": {
+            "href": "/teams/24/matches"
+          },
+          "championships": {
+            "href": "/teams/24/championships"
+          }
+        }
+      },
+      {
+        "name": "Osvaldo Cruz",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/25/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/25"
+          },
+          "team": {
+            "href": "/teams/25"
+          },
+          "matches": {
+            "href": "/teams/25/matches"
+          },
+          "championships": {
+            "href": "/teams/25/championships"
+          }
+        }
+      },
+      {
+        "name": "Portuguesa",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/27/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/27"
+          },
+          "team": {
+            "href": "/teams/27"
+          },
+          "matches": {
+            "href": "/teams/27/matches"
+          },
+          "championships": {
+            "href": "/teams/27/championships"
+          }
+        }
+      },
+      {
+        "name": "Red Bull Bragantino",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/28/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/28"
+          },
+          "team": {
+            "href": "/teams/28"
+          },
+          "matches": {
+            "href": "/teams/28/matches"
+          },
+          "championships": {
+            "href": "/teams/28/championships"
+          }
+        }
+      },
+      {
+        "name": "Portuguesa Santista",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/29/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/29"
+          },
+          "team": {
+            "href": "/teams/29"
+          },
+          "matches": {
+            "href": "/teams/29/matches"
+          },
+          "championships": {
+            "href": "/teams/29/championships"
+          }
+        }
+      },
+      {
+        "name": "Rio Preto",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/31/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/31"
+          },
+          "team": {
+            "href": "/teams/31"
+          },
+          "matches": {
+            "href": "/teams/31/matches"
+          },
+          "championships": {
+            "href": "/teams/31/championships"
+          }
+        }
+      },
+      {
+        "name": "São José",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/32/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/32"
+          },
+          "team": {
+            "href": "/teams/32"
+          },
+          "matches": {
+            "href": "/teams/32/matches"
+          },
+          "championships": {
+            "href": "/teams/32/championships"
+          }
+        }
+      },
+      {
+        "name": "América",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/33/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/33"
+          },
+          "team": {
+            "href": "/teams/33"
+          },
+          "matches": {
+            "href": "/teams/33/matches"
+          },
+          "championships": {
+            "href": "/teams/33/championships"
+          }
+        }
+      },
+      {
+        "name": "Taquaritinga",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/34/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/34"
+          },
+          "team": {
+            "href": "/teams/34"
+          },
+          "matches": {
+            "href": "/teams/34/matches"
+          },
+          "championships": {
+            "href": "/teams/34/championships"
+          }
+        }
+      },
+      {
+        "name": "Paulista",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/35/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/35"
+          },
+          "team": {
+            "href": "/teams/35"
+          },
+          "matches": {
+            "href": "/teams/35/matches"
+          },
+          "championships": {
+            "href": "/teams/35/championships"
+          }
+        }
+      },
+      {
+        "name": "São Caetano",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/36/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/36"
+          },
+          "team": {
+            "href": "/teams/36"
+          },
+          "matches": {
+            "href": "/teams/36/matches"
+          },
+          "championships": {
+            "href": "/teams/36/championships"
+          }
+        }
+      },
+      {
+        "name": "Taubaté",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/37/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/37"
+          },
+          "team": {
+            "href": "/teams/37"
+          },
+          "matches": {
+            "href": "/teams/37/matches"
+          },
+          "championships": {
+            "href": "/teams/37/championships"
+          }
+        }
+      },
+      {
+        "name": "Ponte Preta",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/38/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/38"
+          },
+          "team": {
+            "href": "/teams/38"
+          },
+          "matches": {
+            "href": "/teams/38/matches"
+          },
+          "championships": {
+            "href": "/teams/38/championships"
+          }
+        }
+      },
+      {
+        "name": "Corinthians",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/39/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/39"
+          },
+          "team": {
+            "href": "/teams/39"
+          },
+          "matches": {
+            "href": "/teams/39/matches"
+          },
+          "championships": {
+            "href": "/teams/39/championships"
+          }
+        }
+      },
+      {
+        "name": "Santos",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/41/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/41"
+          },
+          "team": {
+            "href": "/teams/41"
+          },
+          "matches": {
+            "href": "/teams/41/matches"
+          },
+          "championships": {
+            "href": "/teams/41/championships"
+          }
+        }
+      },
+      {
+        "name": "Francana",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/42/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/42"
+          },
+          "team": {
+            "href": "/teams/42"
+          },
+          "matches": {
+            "href": "/teams/42/matches"
+          },
+          "championships": {
+            "href": "/teams/42/championships"
+          }
+        }
+      },
+      {
+        "name": "Santacruzense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/45/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/45"
+          },
+          "team": {
+            "href": "/teams/45"
+          },
+          "matches": {
+            "href": "/teams/45/matches"
+          },
+          "championships": {
+            "href": "/teams/45/championships"
+          }
+        }
+      },
+      {
+        "name": "Monte Azul",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/46/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/46"
+          },
+          "team": {
+            "href": "/teams/46"
+          },
+          "matches": {
+            "href": "/teams/46/matches"
+          },
+          "championships": {
+            "href": "/teams/46/championships"
+          }
+        }
+      },
+      {
+        "name": "Linense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/47/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/47"
+          },
+          "team": {
+            "href": "/teams/47"
+          },
+          "matches": {
+            "href": "/teams/47/matches"
+          },
+          "championships": {
+            "href": "/teams/47/championships"
+          }
+        }
+      },
+      {
+        "name": "Primavera",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/49/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/49"
+          },
+          "team": {
+            "href": "/teams/49"
+          },
+          "matches": {
+            "href": "/teams/49/matches"
+          },
+          "championships": {
+            "href": "/teams/49/championships"
+          }
+        }
+      },
+      {
+        "name": "XV de Piracicaba",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/50/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/50"
+          },
+          "team": {
+            "href": "/teams/50"
+          },
+          "matches": {
+            "href": "/teams/50/matches"
+          },
+          "championships": {
+            "href": "/teams/50/championships"
+          }
+        }
+      },
+      {
+        "name": "Ferroviária",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/51/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/51"
+          },
+          "team": {
+            "href": "/teams/51"
+          },
+          "matches": {
+            "href": "/teams/51/matches"
+          },
+          "championships": {
+            "href": "/teams/51/championships"
+          }
+        }
+      },
+      {
+        "name": "Catanduvense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/52/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/52"
+          },
+          "team": {
+            "href": "/teams/52"
+          },
+          "matches": {
+            "href": "/teams/52/matches"
+          },
+          "championships": {
+            "href": "/teams/52/championships"
+          }
+        }
+      },
+      {
+        "name": "Mauaense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/53/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/53"
+          },
+          "team": {
+            "href": "/teams/53"
+          },
+          "matches": {
+            "href": "/teams/53/matches"
+          },
+          "championships": {
+            "href": "/teams/53/championships"
+          }
+        }
+      },
+      {
+        "name": "Independente",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/54/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/54"
+          },
+          "team": {
+            "href": "/teams/54"
+          },
+          "matches": {
+            "href": "/teams/54/matches"
+          },
+          "championships": {
+            "href": "/teams/54/championships"
+          }
+        }
+      },
+      {
+        "name": "Olímpia",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/55/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/55"
+          },
+          "team": {
+            "href": "/teams/55"
+          },
+          "matches": {
+            "href": "/teams/55/matches"
+          },
+          "championships": {
+            "href": "/teams/55/championships"
+          }
+        }
+      },
+      {
+        "name": "São Bernardo",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/56/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/56"
+          },
+          "team": {
+            "href": "/teams/56"
+          },
+          "matches": {
+            "href": "/teams/56/matches"
+          },
+          "championships": {
+            "href": "/teams/56/championships"
+          }
+        }
+      },
+      {
+        "name": "São Carlos",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/57/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/57"
+          },
+          "team": {
+            "href": "/teams/57"
+          },
+          "matches": {
+            "href": "/teams/57/matches"
+          },
+          "championships": {
+            "href": "/teams/57/championships"
+          }
+        }
+      },
+      {
+        "name": "União Barbarense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/59/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/59"
+          },
+          "team": {
+            "href": "/teams/59"
+          },
+          "matches": {
+            "href": "/teams/59/matches"
+          },
+          "championships": {
+            "href": "/teams/59/championships"
+          }
+        }
+      },
+      {
+        "name": "União Mogi",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/60/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/60"
+          },
+          "team": {
+            "href": "/teams/60"
+          },
+          "matches": {
+            "href": "/teams/60/matches"
+          },
+          "championships": {
+            "href": "/teams/60/championships"
+          }
+        }
+      },
+      {
+        "name": "Taboão da Serra",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/74/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/74"
+          },
+          "team": {
+            "href": "/teams/74"
+          },
+          "matches": {
+            "href": "/teams/74/matches"
+          },
+          "championships": {
+            "href": "/teams/74/championships"
+          }
+        }
+      },
+      {
+        "name": "Amparo",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/82/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/82"
+          },
+          "team": {
+            "href": "/teams/82"
+          },
+          "matches": {
+            "href": "/teams/82/matches"
+          },
+          "championships": {
+            "href": "/teams/82/championships"
+          }
+        }
+      },
+      {
+        "name": "Ecus",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/107/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/107"
+          },
+          "team": {
+            "href": "/teams/107"
+          },
+          "matches": {
+            "href": "/teams/107/matches"
+          },
+          "championships": {
+            "href": "/teams/107/championships"
+          }
+        }
+      },
+      {
+        "name": "Fernandópolis",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/305/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/305"
+          },
+          "team": {
+            "href": "/teams/305"
+          },
+          "matches": {
+            "href": "/teams/305/matches"
+          },
+          "championships": {
+            "href": "/teams/305/championships"
+          }
+        }
+      },
+      {
+        "name": "Guarulhos",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/311/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/311"
+          },
+          "team": {
+            "href": "/teams/311"
+          },
+          "matches": {
+            "href": "/teams/311/matches"
+          },
+          "championships": {
+            "href": "/teams/311/championships"
+          }
+        }
+      },
+      {
+        "name": "Barcelona",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/313/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/313"
+          },
+          "team": {
+            "href": "/teams/313"
+          },
+          "matches": {
+            "href": "/teams/313/matches"
+          },
+          "championships": {
+            "href": "/teams/313/championships"
+          }
+        }
+      },
+      {
+        "name": "Barretos",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/314/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/314"
+          },
+          "team": {
+            "href": "/teams/314"
+          },
+          "matches": {
+            "href": "/teams/314/matches"
+          },
+          "championships": {
+            "href": "/teams/314/championships"
+          }
+        }
+      },
+      {
+        "name": "Batatais",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/317/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/317"
+          },
+          "team": {
+            "href": "/teams/317"
+          },
+          "matches": {
+            "href": "/teams/317/matches"
+          },
+          "championships": {
+            "href": "/teams/317/championships"
+          }
+        }
+      },
+      {
+        "name": "Jabaquara",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/318/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/318"
+          },
+          "team": {
+            "href": "/teams/318"
+          },
+          "matches": {
+            "href": "/teams/318/matches"
+          },
+          "championships": {
+            "href": "/teams/318/championships"
+          }
+        }
+      },
+      {
+        "name": "Capivariano",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/321/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/321"
+          },
+          "team": {
+            "href": "/teams/321"
+          },
+          "matches": {
+            "href": "/teams/321/matches"
+          },
+          "championships": {
+            "href": "/teams/321/championships"
+          }
+        }
+      },
+      {
+        "name": "José Bonifácio",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/322/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/322"
+          },
+          "team": {
+            "href": "/teams/322"
+          },
+          "matches": {
+            "href": "/teams/322/matches"
+          },
+          "championships": {
+            "href": "/teams/322/championships"
+          }
+        }
+      },
+      {
+        "name": "Assisense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/323/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/323"
+          },
+          "team": {
+            "href": "/teams/323"
+          },
+          "matches": {
+            "href": "/teams/323/matches"
+          },
+          "championships": {
+            "href": "/teams/323/championships"
+          }
+        }
+      },
+      {
+        "name": "Atlético Mogi",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/324/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/324"
+          },
+          "team": {
+            "href": "/teams/324"
+          },
+          "matches": {
+            "href": "/teams/324/matches"
+          },
+          "championships": {
+            "href": "/teams/324/championships"
+          }
+        }
+      },
+      {
+        "name": "Itapirense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/343/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/343"
+          },
+          "team": {
+            "href": "/teams/343"
+          },
+          "matches": {
+            "href": "/teams/343/matches"
+          },
+          "championships": {
+            "href": "/teams/343/championships"
+          }
+        }
+      },
+      {
+        "name": "Matonense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/344/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/344"
+          },
+          "team": {
+            "href": "/teams/344"
+          },
+          "matches": {
+            "href": "/teams/344/matches"
+          },
+          "championships": {
+            "href": "/teams/344/championships"
+          }
+        }
+      },
+      {
+        "name": "Atibaia",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/347/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/347"
+          },
+          "team": {
+            "href": "/teams/347"
+          },
+          "matches": {
+            "href": "/teams/347/matches"
+          },
+          "championships": {
+            "href": "/teams/347/championships"
+          }
+        }
+      },
+      {
+        "name": "Penapolense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/348/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/348"
+          },
+          "team": {
+            "href": "/teams/348"
+          },
+          "matches": {
+            "href": "/teams/348/matches"
+          },
+          "championships": {
+            "href": "/teams/348/championships"
+          }
+        }
+      },
+      {
+        "name": "Tanabi",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/353/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/353"
+          },
+          "team": {
+            "href": "/teams/353"
+          },
+          "matches": {
+            "href": "/teams/353/matches"
+          },
+          "championships": {
+            "href": "/teams/353/championships"
+          }
+        }
+      },
+      {
+        "name": "Tupã",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/354/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/354"
+          },
+          "team": {
+            "href": "/teams/354"
+          },
+          "matches": {
+            "href": "/teams/354/matches"
+          },
+          "championships": {
+            "href": "/teams/354/championships"
+          }
+        }
+      },
+      {
+        "name": "União Suzano",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/355/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/355"
+          },
+          "team": {
+            "href": "/teams/355"
+          },
+          "matches": {
+            "href": "/teams/355/matches"
+          },
+          "championships": {
+            "href": "/teams/355/championships"
+          }
+        }
+      },
+      {
+        "name": "Elosport",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/402/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/402"
+          },
+          "team": {
+            "href": "/teams/402"
+          },
+          "matches": {
+            "href": "/teams/402/matches"
+          },
+          "championships": {
+            "href": "/teams/402/championships"
+          }
+        }
+      },
+      {
+        "name": "Brasilis",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/405/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/405"
+          },
+          "team": {
+            "href": "/teams/405"
+          },
+          "matches": {
+            "href": "/teams/405/matches"
+          },
+          "championships": {
+            "href": "/teams/405/championships"
+          }
+        }
+      },
+      {
+        "name": "Palmeirinha",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/406/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/406"
+          },
+          "team": {
+            "href": "/teams/406"
+          },
+          "matches": {
+            "href": "/teams/406/matches"
+          },
+          "championships": {
+            "href": "/teams/406/championships"
+          }
+        }
+      },
+      {
+        "name": "Velo Clube",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/407/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/407"
+          },
+          "team": {
+            "href": "/teams/407"
+          },
+          "matches": {
+            "href": "/teams/407/matches"
+          },
+          "championships": {
+            "href": "/teams/407/championships"
+          }
+        }
+      },
+      {
+        "name": "Inter de Bebedouro",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/408/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/408"
+          },
+          "team": {
+            "href": "/teams/408"
+          },
+          "matches": {
+            "href": "/teams/408/matches"
+          },
+          "championships": {
+            "href": "/teams/408/championships"
+          }
+        }
+      },
+      {
+        "name": "Red Bull Brasil",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/682/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/682"
+          },
+          "team": {
+            "href": "/teams/682"
+          },
+          "matches": {
+            "href": "/teams/682/matches"
+          },
+          "championships": {
+            "href": "/teams/682/championships"
+          }
+        }
+      },
+      {
+        "name": "Grêmio Osasco",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/691/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/691"
+          },
+          "team": {
+            "href": "/teams/691"
+          },
+          "matches": {
+            "href": "/teams/691/matches"
+          },
+          "championships": {
+            "href": "/teams/691/championships"
+          }
+        }
+      },
+      {
+        "name": "Desportivo Brasil",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/757/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/757"
+          },
+          "team": {
+            "href": "/teams/757"
+          },
+          "matches": {
+            "href": "/teams/757/matches"
+          },
+          "championships": {
+            "href": "/teams/757/championships"
+          }
+        }
+      },
+      {
+        "name": "Lemense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/763/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/763"
+          },
+          "team": {
+            "href": "/teams/763"
+          },
+          "matches": {
+            "href": "/teams/763/matches"
+          },
+          "championships": {
+            "href": "/teams/763/championships"
+          }
+        }
+      },
+      {
+        "name": "Votuporanguense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1038/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1038"
+          },
+          "team": {
+            "href": "/teams/1038"
+          },
+          "matches": {
+            "href": "/teams/1038/matches"
+          },
+          "championships": {
+            "href": "/teams/1038/championships"
+          }
+        }
+      },
+      {
+        "name": "Presidente Prudente",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1039/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1039"
+          },
+          "team": {
+            "href": "/teams/1039"
+          },
+          "matches": {
+            "href": "/teams/1039/matches"
+          },
+          "championships": {
+            "href": "/teams/1039/championships"
+          }
+        }
+      },
+      {
+        "name": "Joseense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1041/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1041"
+          },
+          "team": {
+            "href": "/teams/1041"
+          },
+          "matches": {
+            "href": "/teams/1041/matches"
+          },
+          "championships": {
+            "href": "/teams/1041/championships"
+          }
+        }
+      },
+      {
+        "name": "EC São Bernardo",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1042/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1042"
+          },
+          "team": {
+            "href": "/teams/1042"
+          },
+          "matches": {
+            "href": "/teams/1042/matches"
+          },
+          "championships": {
+            "href": "/teams/1042/championships"
+          }
+        }
+      },
+      {
+        "name": "Cotia",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1166/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1166"
+          },
+          "team": {
+            "href": "/teams/1166"
+          },
+          "matches": {
+            "href": "/teams/1166/matches"
+          },
+          "championships": {
+            "href": "/teams/1166/championships"
+          }
+        }
+      },
+      {
+        "name": "Osasco",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1167/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1167"
+          },
+          "team": {
+            "href": "/teams/1167"
+          },
+          "matches": {
+            "href": "/teams/1167/matches"
+          },
+          "championships": {
+            "href": "/teams/1167/championships"
+          }
+        }
+      },
+      {
+        "name": "Manthiqueira",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1168/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1168"
+          },
+          "team": {
+            "href": "/teams/1168"
+          },
+          "matches": {
+            "href": "/teams/1168/matches"
+          },
+          "championships": {
+            "href": "/teams/1168/championships"
+          }
+        }
+      },
+      {
+        "name": "Guarujá",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1169/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1169"
+          },
+          "team": {
+            "href": "/teams/1169"
+          },
+          "matches": {
+            "href": "/teams/1169/matches"
+          },
+          "championships": {
+            "href": "/teams/1169/championships"
+          }
+        }
+      },
+      {
+        "name": "Grêmio Barueri",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1171/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1171"
+          },
+          "team": {
+            "href": "/teams/1171"
+          },
+          "matches": {
+            "href": "/teams/1171/matches"
+          },
+          "championships": {
+            "href": "/teams/1171/championships"
+          }
+        }
+      },
+      {
+        "name": "Grêmio Prudente",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1352/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1352"
+          },
+          "team": {
+            "href": "/teams/1352"
+          },
+          "matches": {
+            "href": "/teams/1352/matches"
+          },
+          "championships": {
+            "href": "/teams/1352/championships"
+          }
+        }
+      },
+      {
+        "name": "Atlético Araçatuba",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1375/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1375"
+          },
+          "team": {
+            "href": "/teams/1375"
+          },
+          "matches": {
+            "href": "/teams/1375/matches"
+          },
+          "championships": {
+            "href": "/teams/1375/championships"
+          }
+        }
+      },
+      {
+        "name": "Novorizontino",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1376/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1376"
+          },
+          "team": {
+            "href": "/teams/1376"
+          },
+          "matches": {
+            "href": "/teams/1376/matches"
+          },
+          "championships": {
+            "href": "/teams/1376/championships"
+          }
+        }
+      },
+      {
+        "name": "Água Santa",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1463/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1463"
+          },
+          "team": {
+            "href": "/teams/1463"
+          },
+          "matches": {
+            "href": "/teams/1463/matches"
+          },
+          "championships": {
+            "href": "/teams/1463/championships"
+          }
+        }
+      },
+      {
+        "name": "Osasco Audax",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1555/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1555"
+          },
+          "team": {
+            "href": "/teams/1555"
+          },
+          "matches": {
+            "href": "/teams/1555/matches"
+          },
+          "championships": {
+            "href": "/teams/1555/championships"
+          }
+        }
+      },
+      {
+        "name": "VOCEM",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1566/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1566"
+          },
+          "team": {
+            "href": "/teams/1566"
+          },
+          "matches": {
+            "href": "/teams/1566/matches"
+          },
+          "championships": {
+            "href": "/teams/1566/championships"
+          }
+        }
+      },
+      {
+        "name": "Diadema",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1567/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1567"
+          },
+          "team": {
+            "href": "/teams/1567"
+          },
+          "matches": {
+            "href": "/teams/1567/matches"
+          },
+          "championships": {
+            "href": "/teams/1567/championships"
+          }
+        }
+      },
+      {
+        "name": "Olé Brasil",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1692/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1692"
+          },
+          "team": {
+            "href": "/teams/1692"
+          },
+          "matches": {
+            "href": "/teams/1692/matches"
+          },
+          "championships": {
+            "href": "/teams/1692/championships"
+          }
+        }
+      },
+      {
+        "name": "Araçatuba",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1793/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1793"
+          },
+          "team": {
+            "href": "/teams/1793"
+          },
+          "matches": {
+            "href": "/teams/1793/matches"
+          },
+          "championships": {
+            "href": "/teams/1793/championships"
+          }
+        }
+      },
+      {
+        "name": "Jaguariúna",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1872/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1872"
+          },
+          "team": {
+            "href": "/teams/1872"
+          },
+          "matches": {
+            "href": "/teams/1872/matches"
+          },
+          "championships": {
+            "href": "/teams/1872/championships"
+          }
+        }
+      },
+      {
+        "name": "Itararé",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1873/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1873"
+          },
+          "team": {
+            "href": "/teams/1873"
+          },
+          "matches": {
+            "href": "/teams/1873/matches"
+          },
+          "championships": {
+            "href": "/teams/1873/championships"
+          }
+        }
+      },
+      {
+        "name": "Real Cubatense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1874/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1874"
+          },
+          "team": {
+            "href": "/teams/1874"
+          },
+          "matches": {
+            "href": "/teams/1874/matches"
+          },
+          "championships": {
+            "href": "/teams/1874/championships"
+          }
+        }
+      },
+      {
+        "name": "Andradina",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1929/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1929"
+          },
+          "team": {
+            "href": "/teams/1929"
+          },
+          "matches": {
+            "href": "/teams/1929/matches"
+          },
+          "championships": {
+            "href": "/teams/1929/championships"
+          }
+        }
+      },
+      {
+        "name": "Talentos 10",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1930/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1930"
+          },
+          "team": {
+            "href": "/teams/1930"
+          },
+          "matches": {
+            "href": "/teams/1930/matches"
+          },
+          "championships": {
+            "href": "/teams/1930/championships"
+          }
+        }
+      },
+      {
+        "name": "Catanduva",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1931/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1931"
+          },
+          "team": {
+            "href": "/teams/1931"
+          },
+          "matches": {
+            "href": "/teams/1931/matches"
+          },
+          "championships": {
+            "href": "/teams/1931/championships"
+          }
+        }
+      },
+      {
+        "name": "Sãocarlense",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1932/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1932"
+          },
+          "team": {
+            "href": "/teams/1932"
+          },
+          "matches": {
+            "href": "/teams/1932/matches"
+          },
+          "championships": {
+            "href": "/teams/1932/championships"
+          }
+        }
+      },
+      {
+        "name": "Mauá",
+        "image_url": "https://www.futebolinterior.com.br/Escudo/1933/60x60",
+        "_links": {
+          "self": {
+            "href": "/teams/1933"
+          },
+          "team": {
+            "href": "/teams/1933"
+          },
+          "matches": {
+            "href": "/teams/1933/matches"
+          },
+          "championships": {
+            "href": "/teams/1933/championships"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "/teams"
+    }
+  }
+}
