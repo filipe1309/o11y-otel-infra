@@ -30,7 +30,6 @@ The stack is designed to be language-agnostic and includes examples for:
 - Go (Golang)
 - Java (Spring Boot)
 - TypeScript/Node.js
-- PHP
 
 ## 🛠 Stack Components
 
@@ -127,10 +126,6 @@ make example-typescript
 - Manual span creation
 - Custom instrumentation
 - TypeScript configuration
-
-### PHP Examples
-
-Coming soon! 🚧
 
 ## 🌐 Accessing Services
 
