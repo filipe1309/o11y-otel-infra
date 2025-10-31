@@ -190,6 +190,11 @@ The collector is configured in `otel-collector/otelcol-config.yaml` with:
   - Automatic filtering of health check probes
   - Custom histogram buckets (2ms to 10s)
 
+> [!TIP]
+> To send telemetry data to the collector, configure your applications with the environment variable:  
+> Local: `OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317`  
+> Docker: `OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317`
+
 ### Prometheus
 
 Configuration in `prometheus/config.yaml`:
