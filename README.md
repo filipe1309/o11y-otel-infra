@@ -59,12 +59,12 @@ The stack is designed to be language-agnostic and includes examples for:
 
 2. **Start the observability stack**
    ```bash
-   docker compose up -d
+   make up
    ```
 
 3. **Verify all services are running**
    ```bash
-   docker compose ps
+   make ps
    ```
 
 4. **Access the web interfaces**
@@ -82,8 +82,7 @@ The repository includes practical examples demonstrating OpenTelemetry integrati
 A simple Go client-server application demonstrating basic tracing:
 
 ```bash
-cd examples/go/basic
-docker compose -f ../../../docker-compose.yaml -f ./docker-compose.yml up -d --build
+make example-go-basic
 ```
 
 **Features:**
@@ -99,8 +98,7 @@ docker compose -f ../../../docker-compose.yaml -f ./docker-compose.yml up -d --b
 Demonstrates automatic context propagation across Java microservices:
 
 ```bash
-cd examples/java/auto-context-propagation
-docker compose -f ../../../docker-compose.yaml -f ./docker-compose.yml up -d --build
+make example-java
 ```
 
 **Services:**
@@ -121,8 +119,7 @@ docker compose -f ../../../docker-compose.yaml -f ./docker-compose.yml up -d --b
 Shows how to manually instrument a TypeScript/Node.js application:
 
 ```bash
-cd examples/typescript/manual_instrumentation
-docker compose -f ../../docker-compose.yaml -f ./docker-compose.yaml up -d --build
+make example-typescript
 ```
 
 **Features:**
@@ -286,15 +283,15 @@ OTEL_LOGS_EXPORTER=otlp
    ```bash
    # Increase Docker memory allocation to at least 4GB
    # Check current resource usage
-   docker stats
+   make ps
    ```
 
 3. **Service connectivity**
    ```bash
    # Check container networking
-   docker compose logs otel-collector
-   docker compose logs jaeger
-   docker compose logs opensearch
+   make logs-otel-collector
+   make logs-jaeger
+   make logs-opensearch
    ```
 
 4. **Missing traces**
@@ -306,9 +303,9 @@ OTEL_LOGS_EXPORTER=otlp
 5. **OpenSearch not healthy**
    ```bash
    # Check OpenSearch status
-   curl -X GET "http://localhost:9200/_cluster/health?pretty"
+   make opensearch
    # Check logs
-   docker compose logs opensearch
+   make logs-opensearch
    ```
 
 ### Health Checks
