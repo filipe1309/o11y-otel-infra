@@ -1,7 +1,7 @@
 .PHONY: help up down restart logs logs-follow ps clean clean-all health status \
         start stop build rebuild validate config test-services \
         jaeger prometheus grafana opensearch otel-collector \
-        example-go-basic example-java example-typescript \
+        example-go-basic example-typescript \
         clean-examples clean-volumes backup-config restore-config \
         monitoring-only
 
@@ -149,13 +149,6 @@ example-go-basic: ## Run Go basic client-server example
 	@echo "$(GREEN)Go basic example started!$(NC)"
 	@echo "$(YELLOW)View traces at http://localhost:16686$(NC)"
 
-example-java: ## Run Java auto-instrumentation example
-	@echo "$(GREEN)Starting Java example...$(NC)"
-	@cd examples/java/auto-context-propagation && \
-		$(DOCKER_COMPOSE) -f ../../../docker-compose.yaml -f ./docker-compose.yml up -d --build --force-recreate
-	@echo "$(GREEN)Java example started!$(NC)"
-	@echo "$(YELLOW)View traces at http://localhost:16686$(NC)"
-
 example-typescript: ## Run TypeScript example
 	@echo "$(GREEN)Starting TypeScript example...$(NC)"
 	@cd examples/typescript && \
@@ -166,7 +159,6 @@ example-typescript: ## Run TypeScript example
 clean-examples: ## Stop and remove all example containers
 	@echo "$(YELLOW)Cleaning up examples...$(NC)"
 	@cd examples/go/basic && $(DOCKER_COMPOSE) -f ./docker-compose.yml down 2>/dev/null || true
-	@cd examples/java/auto-context-propagation && $(DOCKER_COMPOSE) -f ./docker-compose.yml down 2>/dev/null || true
 	@cd examples/typescript && $(DOCKER_COMPOSE) -f ./docker-compose.yaml down 2>/dev/null || true
 	@echo "$(GREEN)Examples cleaned up!$(NC)"
 
@@ -228,7 +220,6 @@ quick-start: validate up health ## Quick start: validate, start services, and ch
 	@echo ""
 	@echo "$(YELLOW)Next steps:$(NC)"
 	@echo "  • Run 'make example-go-basic' to test with Go example"
-	@echo "  • Run 'make example-java' to test with Java example"
 	@echo "  • Run 'make logs-follow' to watch all logs"
 	@echo ""
 
@@ -246,5 +237,4 @@ info: ## Show project information
 	@echo ""
 	@echo "$(BLUE)Examples:$(NC)"
 	@echo "  • Go Basic"
-	@echo "  • Java Auto-Instrumentation"
 	@echo "  • TypeScript"

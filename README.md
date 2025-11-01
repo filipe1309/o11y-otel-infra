@@ -28,7 +28,6 @@ This project provides a complete observability infrastructure stack using OpenTe
 
 The stack is designed to be language-agnostic and includes examples for:
 - Go (Golang)
-- Java (Spring Boot)
 - TypeScript/Node.js
 
 ## 🛠 Stack Components
@@ -90,27 +89,6 @@ make example-go-basic
 - Custom span attributes
 - Structured logging with OpenTelemetry integration
 - Request/response logging
-
-### Java Examples
-
-#### Auto Context Propagation
-Demonstrates automatic context propagation across Java microservices:
-
-```bash
-make example-java
-```
-
-**Services:**
-- **Bets Service**: Manages betting operations
-- **Championships Service**: Handles championship data
-- **Matches Service**: Processes match information
-- **Teams Service**: Manages team data
-
-**Features:**
-- Spring Boot applications
-- Automatic instrumentation
-- Cross-service trace propagation
-- JPA/Hibernate integration
 
 ### TypeScript Examples
 
@@ -211,7 +189,7 @@ Pre-configured with:
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Application   │────│ OpenTelemetry   │────│     Jaeger      │
-│   (Go/Java/TS)  │    │   Collector     │    │   (Tracing)     │
+│     (Go/TS)     │    │   Collector     │    │   (Tracing)     │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
                                 │
                                 ├────────────────┬─────────────────┐
