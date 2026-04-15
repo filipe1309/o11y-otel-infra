@@ -111,7 +111,7 @@
           "refId": "A"
         }
       ],
-      "title": "New panel",
+      "title": "HTTP Server Request Count",
       "type": "timeseries"
     },
     {
@@ -174,7 +174,7 @@
           "timeField": "observedTimestamp"
         }
       ],
-      "title": "New Panel",
+      "title": "Application Logs",
       "type": "logs"
     }
   ],
@@ -190,6 +190,6 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "New dashboard",
+  "title": "Example Overview",
   "version": 0
 }
