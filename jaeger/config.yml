@@ -32,16 +32,15 @@ extensions:
     storage:
       traces: memory_backend
       metrics: metrics_backend
-    base_path: /jaeger/ui
   jaeger_storage:
     backends:
       memory_backend:
         memory:
-          max_traces: ${env:MEMORY_MAX_TRACES}
+          max_traces: 5000
     metric_backends:
       metrics_backend:
         prometheus:
-          endpoint: "http://${env:PROMETHEUS_ADDR}"
+          endpoint: "${env:PROMETHEUS_SERVER_URL}"
           normalize_calls: true
           normalize_duration: true
 

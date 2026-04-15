@@ -3,11 +3,16 @@ services:
 
   jaeger:
     image: cr.jaegertracing.io/jaegertracing/jaeger:2.11.0
+    command: ["--config", "/etc/jaeger/config.yaml"]
+    volumes:
+      - ./jaeger/config.yml:/etc/jaeger/config.yaml
     ports:
       - "16686:16686"
     environment:
-      - COLLECTOR_OTLP_ENABLED=true
-      - METRICS_STORAGE_TYPE=prometheus
+      - JAEGER_HOST=0.0.0.0
+      - JAEGER_GRPC_PORT=4317
+      - OTEL_COLLECTOR_HOST=otel-collector
+      - OTEL_COLLECTOR_PORT_HTTP=4318
       - PROMETHEUS_SERVER_URL=http://prometheus:9090
 
   otel-collector:
