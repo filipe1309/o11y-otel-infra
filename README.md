@@ -34,11 +34,13 @@ The stack is designed to be language-agnostic and includes examples for:
 
 | Component | Version | Purpose | Port |
 |-----------|---------|---------|------|
-| **Jaeger** | 1.40.0 | Distributed tracing | 16686 |
+| **Jaeger** | 2.11.0 | Distributed tracing | 16686 |
 | **OpenTelemetry Collector** | 0.138.0 | Telemetry data collection | 4317, 4318, 8888, 9999 |
 | **Prometheus** | 2.41.0 | Metrics storage & querying | 9090 |
 | **Grafana** | 12.2.0 | Metrics visualization & dashboards | 3000 |
-| **OpenSearch** | Latest | Log management & search | 9200, 9600 |
+| **OpenSearch** | 3.2.0 | Log management & search | 9200 |
+
+All services include Docker health checks with dependency ordering — the OTel Collector waits for Jaeger, Prometheus, and OpenSearch to be healthy before starting.
 
 ## 📋 Prerequisites
 
@@ -55,20 +57,26 @@ The stack is designed to be language-agnostic and includes examples for:
    cd o11y-otel-infra
    ```
 
-2. **Start the observability stack**
+2. **Start the observability stack** (validates config, starts services, and checks health)
    ```bash
-   make up
+   make quick-start
    ```
 
-3. **Verify all services are running**
+   Or start step by step:
    ```bash
-   make ps
+   make up       # Start all services
+   make health   # Check service health
    ```
 
-4. **Access the web interfaces**
+3. **Access the web interfaces**
    - Jaeger UI: http://localhost:16686
    - Grafana: http://localhost:3000
    - Prometheus: http://localhost:9090
+
+4. **See all available commands**
+   ```bash
+   make help
+   ```
 
 ## 📚 Examples
 
@@ -186,21 +194,53 @@ Pre-configured with:
 
 ## 🏗 Architecture
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Application   │────│ OpenTelemetry   │────│     Jaeger      │
-│     (Go/TS)     │    │   Collector     │    │   (Tracing)     │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                │
-                                ├────────────────┬─────────────────┐
-                                │                │                 │
-                       ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
-                       │   Prometheus    │ │    Grafana      │ │   OpenSearch    │
-                       │   (Metrics)     │ │  (Dashboards)   │ │     (Logs)      │
-                       └─────────────────┘ └─────────────────┘ └─────────────────┘
+<!-- Telemetry data flow from applications through the OTel Collector to storage backends and Grafana -->
+
+```mermaid
+graph LR
+    subgraph Applications
+        App["Application\n(Go / TypeScript)"]
+    end
+
+    subgraph Observability Stack
+        OtelCol["OTel Collector"]
+        Jaeger["Jaeger\n(Tracing)"]
+        Prometheus["Prometheus\n(Metrics)"]
+        OpenSearch["OpenSearch\n(Logs)"]
+        Grafana["Grafana\n(Dashboards)"]
+    end
+
+    App -- "OTLP (gRPC/HTTP)" --> OtelCol
+    OtelCol -- "traces" --> Jaeger
+    OtelCol -- "metrics" --> Prometheus
+    OtelCol -- "logs" --> OpenSearch
+    Prometheus -- "query metrics" --> Grafana
+    Jaeger -- "query traces" --> Grafana
+    OpenSearch -- "query logs" --> Grafana
 ```
 
 ## 🔧 Development
+
+### Make Targets
+
+Run `make help` for a full list. Key targets:
+
+| Category | Command | Description |
+|----------|---------|-------------|
+| Stack | `make up` | Start all services |
+| Stack | `make down` | Stop all services |
+| Stack | `make restart` | Restart all services |
+| Monitoring | `make health` | Check health of all services |
+| Monitoring | `make logs-<service>` | Follow logs for a specific service |
+| Services | `make jaeger` | Open Jaeger UI in browser |
+| Services | `make grafana` | Open Grafana UI in browser |
+| Examples | `make example-go-basic` | Run Go client-server example |
+| Examples | `make example-typescript` | Run TypeScript example |
+| Cleanup | `make clean` | Remove containers and networks |
+| Cleanup | `make clean-all` | Remove everything including volumes |
+| Dev | `make shell-<service>` | Open shell in a running service |
+| Dev | `make inspect-<service>` | Inspect service configuration |
+| Config | `make backup-config` | Backup all config files |
 
 ### Adding New Examples
 
