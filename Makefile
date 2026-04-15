@@ -1,9 +1,11 @@
+SHELL := /bin/bash
+
 .PHONY: help up down restart logs logs-follow ps clean clean-all health status \
         start stop build rebuild validate config test-services \
         jaeger prometheus grafana opensearch otel-collector \
         example-go-basic example-typescript \
         clean-examples clean-volumes backup-config restore-config \
-        monitoring-only
+        monitoring-only prune pull update quick-start
 
 # Default target
 .DEFAULT_GOAL := help
@@ -26,13 +28,13 @@ BACKUP_DIR := backups
 help: ## Display this help message
 	@echo "$(BLUE)$(PROJECT_NAME) - Observability & OpenTelemetry Infrastructure$(NC)"
 	@echo ""
-	@awk 'BEGIN {FS = ":.*##"; printf "Usage:\n  make $(GREEN)<target>$(NC)\n"} /^[a-zA-Z_0-9-]+:.*?##/ { printf "  $(GREEN)%-25s$(NC) %s\n", $$1, $$2 } /^##@/ { printf "\n$(BLUE)%s$(NC)\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
+	@awk 'BEGIN {FS = ":.*##"; printf "Usage:\n  make $(GREEN)<target>$(NC)\n"} /^[a-zA-Z_0-9%%-]+:.*?##/ { printf "  $(GREEN)%-25s$(NC) %s\n", $$1, $$2 } /^##@/ { printf "\n$(BLUE)%s$(NC)\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
 
 ##@ Stack Management
 
 up: ## Start all services
 	@echo "$(GREEN)Starting observability stack...$(NC)"
-	$(DOCKER_COMPOSE) -f $(COMPOSE_FILE) up -d
+	$(DOCKER_COMPOSE) -f $(COMPOSE_FILE) up -d --remove-orphans
 	@echo "$(GREEN)Stack started successfully!$(NC)"
 	@echo "$(YELLOW)Run 'make health' to check service status$(NC)"
 
@@ -130,10 +132,12 @@ backup-config: ## Backup configuration files
 	@mkdir -p $(BACKUP_DIR)
 	@tar -czf $(BACKUP_DIR)/config-backup-$$(date +%Y%m%d-%H%M%S).tar.gz \
 		docker-compose.yaml \
-		otel-collector.yaml \
-		prometheus.yaml \
-		ds-prometheus.yaml \
-		Dockerfile.opensearch
+		otel-collector/otelcol-config.yaml \
+		prometheus/config.yaml \
+		jaeger/config.yml \
+		grafana/grafana.ini \
+		grafana/provisioning/datasources/ \
+		opensearch/Dockerfile
 	@echo "$(GREEN)Configuration backed up to $(BACKUP_DIR)/$(NC)"
 
 restore-config: ## List available backups
@@ -158,8 +162,8 @@ example-typescript: ## Run TypeScript example
 
 clean-examples: ## Stop and remove all example containers
 	@echo "$(YELLOW)Cleaning up examples...$(NC)"
-	@cd examples/go/basic && $(DOCKER_COMPOSE) -f ./docker-compose.yml down 2>/dev/null || true
-	@cd examples/typescript && $(DOCKER_COMPOSE) -f ./docker-compose.yaml down 2>/dev/null || true
+	@cd examples/go/basic && $(DOCKER_COMPOSE) -f ../../../docker-compose.yaml -f ./docker-compose.yml down 2>/dev/null || true
+	@cd examples/typescript && $(DOCKER_COMPOSE) -f ../../docker-compose.yaml -f ./docker-compose.yaml down 2>/dev/null || true
 	@echo "$(GREEN)Examples cleaned up!$(NC)"
 
 ##@ Cleanup
@@ -195,7 +199,7 @@ shell-%: ## Open shell in a specific service (e.g., make shell-prometheus)
 
 inspect-%: ## Inspect a specific service configuration (e.g., make inspect-jaeger)
 	@$(DOCKER_COMPOSE) -f $(COMPOSE_FILE) config --services | grep -q "^$*$$" && \
-		docker inspect $$($(DOCKER_COMPOSE) -f $(COMPOSE_FILE) ps -q $*) | jq '.[0]' || \
+		docker inspect $$($(DOCKER_COMPOSE) -f $(COMPOSE_FILE) ps -q $*) | (jq '.[0]' 2>/dev/null || python3 -m json.tool) || \
 		echo "$(RED)Service $* not found$(NC)"
 
 pull: ## Pull latest images
