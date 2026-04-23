@@ -22,6 +22,11 @@ exporters:
     endpoint: "jaeger:4317"
     tls:
       insecure: true
+  otlp/otel-front:
+    endpoint: "otel-front:4317"
+    compression: none
+    tls:
+      insecure: true
   prometheus/spanmetrics:
     endpoint: 0.0.0.0:9999
     metric_expiration: 75s
@@ -83,12 +88,12 @@ service:
     traces:
       receivers: [ otlp ]
       processors: [ tail_sampling, batch ]
-      exporters: [ otlp/jaeger, spanmetrics ]
+      exporters: [ otlp/jaeger, otlp/otel-front, spanmetrics ]
     metrics:
       receivers: [ otlp, prometheus, spanmetrics ]
       processors: [ batch ]
-      exporters: [ prometheusremotewrite, prometheus/spanmetrics ]
+      exporters: [ prometheusremotewrite, prometheus/spanmetrics, otlp/otel-front ]
     logs:
       receivers: [ otlp ]
       processors: [ batch ]
-      exporters: [ debug, opensearch ]
+      exporters: [ debug, opensearch, otlp/otel-front ]

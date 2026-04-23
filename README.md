@@ -39,6 +39,7 @@ The stack is designed to be language-agnostic and includes examples for:
 | **Prometheus** | 2.41.0 | Metrics storage & querying | 9090 |
 | **Grafana** | 12.2.0 | Metrics visualization & dashboards | 3000 |
 | **OpenSearch** | 3.2.0 | Log management & search | 9200 |
+| **OTEL Viewer** (otel-front) | latest | Lightweight local OTLP viewer (traces, logs, metrics) | 8000 |
 
 All services include Docker health checks with dependency ordering — the OTel Collector waits for Jaeger, Prometheus, and OpenSearch to be healthy before starting.
 
@@ -72,6 +73,7 @@ All services include Docker health checks with dependency ordering — the OTel 
    - Jaeger UI: http://localhost:16686
    - Grafana: http://localhost:3000
    - Prometheus: http://localhost:9090
+   - OTEL Viewer: http://localhost:8000
 
 4. **See all available commands**
    ```bash
@@ -153,6 +155,17 @@ make example-typescript
   - Daily log indices: `otel-logs-yyyy-MM-dd`
   - Integrated with Grafana for log visualization
 
+### OTEL Viewer (otel-front)
+- **URL**: http://localhost:8000
+- **Purpose**: Lightweight local OpenTelemetry viewer for traces, logs, and metrics
+- **Project**: [mesaglio/otel-front](https://github.com/mesaglio/otel-front)
+- **Features**:
+  - Waterfall view and flame graph for traces
+  - Side-by-side trace comparison
+  - Full-text log search with `trace_id` correlation
+  - Metrics query builder with time-series charts
+  - Receives a fan-out of all signals from the OTel Collector — no app changes needed
+
 ## ⚙️ Configuration
 
 ### OpenTelemetry Collector
@@ -161,7 +174,7 @@ The collector is configured in `otel-collector/otelcol-config.yaml` with:
 
 - **Receivers**: OTLP (gRPC/HTTP), Prometheus scraping
 - **Processors**: Batch processing, tail sampling (50%), span metrics generation
-- **Exporters**: Jaeger, Prometheus Remote Write, OpenSearch (for logs)
+- **Exporters**: Jaeger, Prometheus Remote Write, OpenSearch (for logs), OTEL Viewer (otel-front, all signals)
 - **Connectors**: Span metrics with HTTP dimensions
 - **Features**:
   - Tail sampling with 45s decision wait
@@ -208,12 +221,14 @@ graph LR
         Prometheus["Prometheus\n(Metrics)"]
         OpenSearch["OpenSearch\n(Logs)"]
         Grafana["Grafana\n(Dashboards)"]
+        OtelViewer["OTEL Viewer\n(otel-front)"]
     end
 
     App -- "OTLP (gRPC/HTTP)" --> OtelCol
     OtelCol -- "traces" --> Jaeger
     OtelCol -- "metrics" --> Prometheus
     OtelCol -- "logs" --> OpenSearch
+    OtelCol -- "traces / logs / metrics" --> OtelViewer
     Prometheus -- "query metrics" --> Grafana
     Jaeger -- "query traces" --> Grafana
     OpenSearch -- "query logs" --> Grafana
@@ -234,6 +249,7 @@ Run `make help` for a full list. Key targets:
 | Monitoring | `make logs-<service>` | Follow logs for a specific service |
 | Services | `make jaeger` | Open Jaeger UI in browser |
 | Services | `make grafana` | Open Grafana UI in browser |
+| Services | `make otel-viewer` | Open OTEL Viewer (otel-front) UI in browser |
 | Examples | `make example-go-basic` | Run Go client-server example |
 | Examples | `make example-typescript` | Run TypeScript example |
 | Cleanup | `make clean` | Remove containers and networks |

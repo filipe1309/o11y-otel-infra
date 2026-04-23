@@ -38,6 +38,19 @@ services:
         condition: service_healthy
       opensearch:
         condition: service_healthy
+      otel-front:
+        condition: service_started
+
+  otel-front:
+    image: ghcr.io/mesaglio/otel-front:latest
+    command:
+      - "--no-browser"
+      - "--port=8000"
+      - "--otlp-http-port=4318"
+      - "--otlp-grpc-port=4317"
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
 
   prometheus:
     image: prom/prometheus:v2.41.0
